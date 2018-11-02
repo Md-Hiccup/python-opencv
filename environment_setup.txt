@@ -1,0 +1,23 @@
+##  Create own Virtual Environment
+1.  open cv python
+    $   pip install opencv-contrib-python
+
+2.  Numpy and Scipy
+    $   pip install numpy scipy
+
+3.  Matplotlib
+    $   pip install matplotlib 
+
+4.  opencv	
+    $ wget https://bootstrap.pypa.io/get-pip.py
+    $ sudo python3 get-pip.py 
+    $ sudo pip install opencv-contrib-python        
+
+5.  Mahotas
+    $   pip install mahotas
+
+6.  Scikit-Learn
+    $   pip install scikit-learn
+
+7.  Scikit-Image
+    $   pip install -U scikit-image
