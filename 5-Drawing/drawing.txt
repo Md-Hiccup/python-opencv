@@ -1,0 +1,5 @@
+OpenCV provides some basic methods:
+
+1.  cv2.line()
+2.  cv2.rectangle()
+3.  cv2.circle()
