@@ -11,16 +11,17 @@ args = vars(ap.parse_args())
 image = cv2.imread(args["image"])
 cv2.imshow("Original", image)
 
+#   (r) = Calculate the ratio of proportion of height | width
+#   (dim) = Then Dimension of the image for resize ( Width, Height )
+#   resize( image, new dimension, interpolation = cv2.INTER_AREA) (inter = INTER_LINEAR | INTER_CUBIC | INTER_NEAREST)
 r = 150.0 / image.shape[1]
 dim = (150, int(image.shape[0] * r))
-
 resized = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
 cv2.imshow("Resized (Width)", resized)
 cv2.waitKey(0)
 
 r = 50.0 / image.shape[0]
 dim = (int(image.shape[1] * r), 50)
-
 resized = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
 cv2.imshow("Resized (Height)", resized)
 cv2.waitKey(0)
