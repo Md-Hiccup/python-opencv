@@ -11,7 +11,7 @@ args = vars(ap.parse_args())
 image = cv2.imread(args["image"])
 cv2.imshow("Original", image)
 
-chans = cv2.split(image)
+chans = cv2.split(image)    # len(chans) = 3,   [array[[12, 23, ...]], array[[12, 32, ...]], array[[23, 12, ...]]]
 colors = ("b", "g", "r")
 plt.figure()
 plt.title("Flattened Color Histogram")
