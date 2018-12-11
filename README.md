@@ -40,3 +40,10 @@
 ###     Now install open cv
 
 -   $ pip install opencv-contrib-python
+
+###     To install dlib
+-   $ sudo apt-get install build-essential cmake
+-   $ sudo apt-get install libgtk-3-dev
+-   $ sudo apt-get install libboost-all-dev
+
+-   $ pip install dlib   
